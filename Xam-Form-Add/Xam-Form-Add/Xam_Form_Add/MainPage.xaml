@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Xam_Form_Add"
+             x:Class="Xam_Form_Add.MainPage">
+
+    <StackLayout Orientation="Vertical">
+        <Entry x:Name="ValueAEntry"
+               AutomationId="EntryA"
+               FontSize="40" 
+               />
+        <Entry x:Name="ValueBEntry"
+               AutomationId="EntryB"
+               FontSize="40" 
+               />
+        <Button Text="ADD"
+                AutomationId="ButtonAdd"
+                BackgroundColor="PaleGoldenrod"
+                TextColor="Black"
+                FontSize="40"
+                Clicked="AddClicked"
+                />
+        <Button Text="Subtract"
+                AutomationId="ButtonSubtract"
+                BackgroundColor="RosyBrown"
+                TextColor="Black"
+                FontSize="40"
+                Clicked="SubtractClicked"
+                />
+        <Label x:Name="ResultLabel"
+               AutomationId="LabelResult"
+               FontSize="40"
+               />
+    </StackLayout>
+</ContentPage>
