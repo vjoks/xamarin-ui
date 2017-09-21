@@ -36,9 +36,11 @@ namespace Xam_Form_Add_UI_Test
         public void Add_51_With_32_For_Result_83()
         {
             app.EnterText("EntryA", "51");
+            app.Screenshot("Entry A Screen");
             app.EnterText("EntryB", "32");
 
             app.Tap("ButtonAdd");
+            app.Screenshot("Add Screen");
 
             var appResult = app.Query("LabelResult").First(result => result.Text == "83");
             Assert.IsTrue(appResult != null, "Result Label has unexpected value");
